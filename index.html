@@ -2,38 +2,37 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>학술동아리 DBDepth</title>
+  <title>DBDepth | 학술동아리</title>
   <style>
-    body, html {
-      margin: 0; padding: 0;
-      height: 100%;
-      font-family: 'Pretendard', sans-serif;
-      color: white; text-align: center;
-    }
-    .hero {
-      background: url('images/background.jpg') no-repeat center center/cover;
-      height: 100%;
-      display: flex; flex-direction: column;
-      justify-content: center; align-items: center;
-    }
-    h1 { font-size: 3em; margin: 0; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
-    p { font-size: 1.3em; margin: 10px 0 30px; text-shadow: 1px 1px 5px rgba(0,0,0,0.7); }
-    a {
-      padding: 12px 20px; margin: 5px;
-      background: rgba(0,0,0,0.6);
-      color: white; text-decoration: none;
-      border-radius: 8px; font-weight: bold;
-    }
-    a:hover { background: rgba(255,255,255,0.2); }
+    body,html{margin:0;padding:0;height:100%;font-family:Pretendard,sans-serif;}
+    nav{position:fixed;top:0;left:0;width:100%;display:flex;justify-content:space-between;
+        align-items:center;padding:15px 40px;background:rgba(0,0,0,0.6);backdrop-filter:blur(5px);z-index:1000;}
+    nav .logo a{color:white;text-decoration:none;font-weight:bold;font-size:20px;}
+    nav ul{list-style:none;display:flex;gap:25px;margin:0;padding:0;}
+    nav ul li a{color:white;text-decoration:none;font-weight:600;}
+    nav ul li a:hover{color:#f97316;}
+    .hero{background:url("images/background.jpg") no-repeat center/cover;height:100vh;
+          display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:white;}
+    .hero h1{font-size:3.5em;text-shadow:2px 2px 10px rgba(0,0,0,0.7);}
+    .hero p{font-size:1.2em;max-width:700px;margin:20px auto;text-shadow:1px 1px 6px rgba(0,0,0,0.7);}
   </style>
 </head>
 <body>
+  <!-- 네비게이션 -->
+  <nav>
+    <div class="logo"><a href="index.html">DBDepth</a></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="members.html">Members</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
   <div class="hero">
-    <h1>학술동아리 DBDepth</h1>
-    <p>탐구로 연결되는 학술 커뮤니티</p>
-    <a href="members.html">멤버 소개</a>
-    <a href="research.html">연구 활동</a>
-    <a href="contact.html">연락하기</a>
+    <h1>DBDepth 학술동아리</h1>
+    <p>탐구로 연결되는 학술 커뮤니티<br>AI · 물리 · 데이터 · 지구과학 연구</p>
   </div>
 </body>
 </html>
